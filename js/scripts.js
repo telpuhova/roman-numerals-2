@@ -1,6 +1,9 @@
 //Back End Logic
 
 var numberToRomanNumeral = function(inputNumber) {
+  if (!(inputNumber.match(/[0-9]/))) {
+    return "Error!";
+  }
   return "I";
 }
 

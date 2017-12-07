@@ -12,7 +12,7 @@ _WebApp to translate numbers into roman numerals._
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | return first symbol | 1 | I |
-| not a number | djfkhdskj | error |
+| not a number | p | error |
 | a value that is equal to a single roman numeral | 100 | C |
 | the return is a multiple digit roman numeral , using adding | 90 | LXXXX |
 | the return is a multiple digit roman numeral, using subtraction | 90 | XC |
