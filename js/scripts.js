@@ -1,3 +1,10 @@
+//Back End Logic
+
+var numberToRomanNumeral = function(inputNumber) {
+  return "I";
+}
+
+
 //User Interface
 $(document).ready(function() {
   $("form#romanForm").submit(function(event) {
@@ -10,5 +17,3 @@ $(document).ready(function() {
 
   });
 });
-
-//Back End Logic
