@@ -12,6 +12,8 @@ var numberToRomanNumeral = function(inputNumberStr) {
 
   if (!(inputNumberStr.match(/[0-9]/))) {
     return "Error!";
+  } else if (inputNumber >= 4000) {
+      return "Error, not a Roman Numeral!";
   }
   else {
     for (var i = 0; i < keyNumbersStr.length; i++) { //first loop
