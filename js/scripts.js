@@ -44,6 +44,26 @@ var numberToRomanNumeral = function(inputNumberStr) {
         }
       }
     }
+  }
+  return result;
+}
+
+//User Interface
+$(document).ready(function() {
+  $("form#romanForm").submit(function(event) {
+    event.preventDefault();
+
+    var inputNumber = $("#number").val();   //Input
+    var result = numberToRomanNumeral(inputNumber); //box containing input
+    $("#result").text(result)  //send result to user
+  });
+});
+
+
+
+
+//alternative back end solution:
+
 
     // var resultArray = result.split("");
     // var symbolsInARow = 1;
@@ -74,21 +94,3 @@ var numberToRomanNumeral = function(inputNumberStr) {
     //   result = resultArrayReversed.join("");
     //
     // }
-
-  }
-  return result;
-}
-
-
-//User Interface
-$(document).ready(function() {
-  $("form#romanForm").submit(function(event) {
-    event.preventDefault();
-
-    var inputNumber = $("#number").val();   //Input
-    var result = numberToRomanNumeral(inputNumber); //box containing input
-    $("#result").text(result)  //send result to user
-
-
-  });
-});
