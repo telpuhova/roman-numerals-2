@@ -9,7 +9,7 @@
 _WebApp to translate numbers into roman numerals._
 
 ### Specs
-| Spec | Input | Output |
+| Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
 | return first symbol | 1 | I |
 | not a number | p | error |
