@@ -14,8 +14,9 @@ $(document).ready(function() {
     var checker = checkInput(inputNumber);
 
     if (checker === true) {
-
-      var result = numberToRomanNumeral(inputNumber);
+      var romanNumeral = new RomanNumeral(inputNumber);
+      romanNumeral.setRomanNumeral();
+      var result = romanNumeral.getRomanNumeral();
       $("#result").text(result);
     }
     else {
