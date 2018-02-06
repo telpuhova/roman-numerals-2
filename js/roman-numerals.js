@@ -48,3 +48,5 @@ RomanNumeral.prototype.setRomanNumeral = function() {
   this.romanNumeral = result;
   return 0;
 }
+
+exports.romanNumeralsModule = RomanNumeral;

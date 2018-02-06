@@ -1,0 +1,30 @@
+{
+  "name": "roman-numerals",
+  "version": "1.0.0",
+  "description": "#### _Roman Numeral Translator, 2/6/2018_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telpuhova/roman-numerals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/telpuhova/roman-numerals/issues"
+  },
+  "homepage": "https://github.com/telpuhova/roman-numerals#readme",
+  "devDependencies": {
+    "browserify": "^15.2.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

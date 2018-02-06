@@ -1,3 +1,5 @@
+var RomanNumeral = require('./../js/roman-numerals.js').romanNumeralsModule;
+
 function checkInput(input) {
   if (input.match(/[0-9]/)) {
    return true;
