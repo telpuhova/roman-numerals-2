@@ -1,4 +1,4 @@
-# _roman-numeral-translator-2_
+# _roman-numerals-2_
 
 #### _Roman Numeral Translator, 2/6/2018_
 
