@@ -26,7 +26,7 @@ _WebApp to translate numbers into roman numerals. The second version._
 
 ## Technologies Used
 
-_HTML, CSS, JS, Bootstrap, jquery_
+_HTML, CSS, JS, Node, npm, gulp, jasmine, karma, Bootstrap, jQuery_
 
 ### License
 
