@@ -74,38 +74,3 @@ $(document).ready(function() {
     }
   });
 });
-
-
-
-//alternative back end solution:
-
-
-    // var resultArray = result.split("");
-    // var symbolsInARow = 1;
-    // for(var i = 1; i < resultArray.length; i++) {
-    //   if (resultArray[i] === resultArray[i-1]) {
-    //     symbolsInARow += 1;
-    //   }
-    // }
-
-
-    // if (symbolsInARow >= 4) {
-    //   result = "";
-    //
-    //   for(var k = 0; k < 20; k++) { //parent loop stop at 20 because var is set to
-    //     for (var i = 0; i < symbols.length; i++) { // second loop (nested loop)
-    //       if (inputNumber <= keyNumbers[i]) {
-    //         result += symbols[i]; // concatinate L to result
-    //         inputNumber = keyNumbers[i] - inputNumber; //90 - 50(l)
-    //         if ((keyNumbers[i] - inputNumber) === 0) {
-    //           k = 18; // stops the parent loop
-    //         }
-    //         break;
-    //       }
-    //     }
-    //   }
-    //   var resultArray = result.split("");
-    //   var resultArrayReversed = resultArray.reverse();
-    //   result = resultArrayReversed.join("");
-    //
-    // }
