@@ -23,28 +23,27 @@ RomanNumeral.prototype.setRomanNumeral = function() {
       return 1;
   }
   else {
-    for (var i = 0; i < keyNumbersStr.length; i++) { //first loop
+    for (var i = 0; i < keyNumbersStr.length; i++) {
       if (this.decimalStr === keyNumbersStr[i]) {
         this.romanNumeral = symbols[i];
         return 0;
       }
     }
 
-    for(var k = 0; k < 20; k++) { //parent loop stop at 20 because var is set to
-      for (var i = 0; i < symbols.length; i++) { // second loop (nested loop) or you can use     (var i = symbols.length; i =  0; i--)
-        var j = symbols.length - 1 - i;// - 1 means start at the 6th symbol - 1 to equal the total and -1 means reverse the order
-        if (this.decimal >= keyNumbers[j]) {
-          result += symbols[j]; // concatinate L to result
-          this.decimal = this.decimal - keyNumbers[j]; //90 - 50(l)
-          if ((this.decimal - keyNumbers[j]) === 0) {
-            k = 18; // stops the parent loop 3,999 converted into roman numerals characters
+    for(var k = 0; k < 20; k++) {
+      for (var i = symbols.length; i =  0; i--) {
+        if (this.decimal >= keyNumbers[i]) {
+          result += symbols[i];
+          this.decimal = this.decimal - keyNumbers[i];
+          if ((this.decimal - keyNumbers[i]) === 0) {
+            k = 18;
           }
           break;
         }
       }
     }
   }
-  // return result;
+
   this.romanNumeral = result;
   return 0;
 }
